@@ -1,0 +1,19 @@
+.contacts_page_cont {
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Ubuntu";
+}
+
+.map_img_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.map_img {
+  cursor: pointer;
+  margin: 20px;
+  border-radius: 15px;
+  max-width: 100%;
+}

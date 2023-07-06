@@ -1,0 +1,227 @@
+.main_page_cont {
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Ubuntu";
+}
+
+.h1_bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.h1_text {
+    position: absolute;
+
+    top: 50px;
+    /* left: 50px;  */
+    /* min-width: 225px;
+    max-width: 700px; */
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    /* line-height: 70px; */
+    /* color: black;
+     */
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+        2px 2px 0 #000;
+    font-family: "Ubuntu";
+    z-index: 30;
+}
+.photo_main_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo_main_cont > img {
+    /* opacity: 0.7; */
+}
+
+
+.main_second_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.second_info_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    width: 80%;
+    height: auto;
+    background-color: #A7A7CE1A;
+    border-radius: 15px;
+    
+}
+
+.second_info_img_cont {
+    display: flex;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.second_info_img_cont > img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.second_info_text_cont {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+}
+.second_info_text_title {
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.2;
+    color: #393939;
+    margin-bottom: 30px;
+}
+
+.second_info_half {
+    /* display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin: 10px;
+}
+
+
+.second_component_cont {
+    display: flex;
+    flex-direction: column;
+}
+.second_component_number {
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.2;
+    color: #393939;
+
+}
+.second_component_text {}
+
+.second_info_text_inner {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.faculties_component_cont{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #A7A7CE1A;
+    height: 200px;
+    width: 170px;
+    border: 1px solid black;
+    margin: 20px;
+    border-radius: 10px;
+}
+.faculties_component_img{
+    width: 50px;
+    height: 50px;
+}
+.faculties_component_text{
+
+}
+
+.faculties_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.faculties_title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.2;
+    color: #393939;
+    margin-bottom: 30px;
+}
+
+.faculties_half_cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+
+}
+
+.faculties_all {
+    margin: 50px 0;
+}
+
+@media screen and (max-width: 1140px) {
+    
+    .second_info_container {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .h1_text {
+        font-size: 40px;
+        max-width: 400px;
+    }
+}
+@media screen and (max-width: 917px) {
+    .second_info_text_inner {
+        display: flex;
+        flex-direction: row;
+    }
+    .second_info_half {
+        grid-template-columns: repeat(1, 2fr);
+        grid-template-rows: repeat(3, 2fr);
+    }
+}
+@media screen and (max-width: 766px) {
+    .h1_text {
+        font-size: 30px;
+        max-width: 320px;
+    }
+    .faculties_half_cont {
+        flex-direction: column;
+    }
+    .faculties_cont {
+        flex-direction: row;
+    }
+    .faculties_half_cont.first {
+        align-items: end;
+    }
+    .faculties_half_cont.second {
+        align-items: start;
+    }
+}
+@media screen and (max-width: 425px) {
+    
+    .faculties_cont {
+        flex-direction: column;
+    }
+    .faculties_half_cont.first {
+        align-items: center;
+    }
+    .faculties_half_cont.second {
+        align-items: center;
+    }
+}

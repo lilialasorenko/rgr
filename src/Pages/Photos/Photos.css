@@ -1,0 +1,13 @@
+.photos_main_container {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slider_title {
+  font-family: "Ubuntu";
+  margin-bottom: 50px;
+}
